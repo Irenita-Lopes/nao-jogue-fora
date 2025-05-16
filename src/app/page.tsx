@@ -1,103 +1,137 @@
 import Image from "next/image";
+import { BiAngry } from "react-icons/bi";
+import { FaRegSmileWink } from "react-icons/fa";
+import dia_nublado_com_poluicao from "@/assets/dia_nublado_com_poluicao.jpg";
+import dia_ensolarado_com_descarte_residual from "@/assets/dia_ensolarado_com_descarte_residual.jpg";
 
 export default function Home() {
-  return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm/6 text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-[family-name:var(--font-geist-mono)] font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
+  function Homepage() {
+    return (
+      <>
+        <h1 className="mt-14 text-8xl font-bold">
+          não jogue fora
+        </h1>
+        <h4 className="mt-5 text-gray-400 font-light">
+          por favor, não diga que vai jogar algo fora
+        </h4>
+        <h2 className="mt-15 text-5xl text-gray-700">
+          Imagine falar que vai "jogar fora" sendo que não existe "fora".
+        </h2>
+      </>
+    );
+  }
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+  function NaoFaca() {
+    return (
+      <>
+        <div className="mt-20 flex gap-4 text-4xl py-6">
+          <BiAngry className="text-red-600" />
+          <h3 className="font-bold text-3xl">
+            Não faça isso
+          </h3>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+
+        <div className="flex gap-15">
           <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+            src={dia_nublado_com_poluicao}
+            alt="dia nublado com poluicao"
+            className="w-1/3" />
+          <p className="text-[1.2rem]">
+            Jogar roupas que não estão em bom estado no lixo comum ou doar para pessoas em situação de rua não são práticas sustentáveis, nem respeitosas.
+
+            Descartar materiais recicláveis misturados com resíduos orgânicos, inviabilizando o processo de triagem e reaproveitamento em cooperativas de reciclagem.
+          </p>
+        </div>
+      </>
+    );
+  }
+
+  function FacaAssim() {
+    return (
+      <>
+        <div className="mt-20 flex gap-4 text-3xl py-6">
+          <FaRegSmileWink className="text-red-600" />
+          <h3 className="font-bold text-3xl">
+            No lugar daquilo, tente isso
+          </h3>
+        </div>
+        <div className="flex gap-15">
           <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+            src={dia_ensolarado_com_descarte_residual}
+            alt="dia ensolarado com descarte residual"
+            className="w-1/3" />
+          <p className="text-[1.2rem]">
+            Leve suas meias usadas para o projeto
+            <a className="font-bold" href="https://www.meiasdobem.com.br/" target="_blank">
+              {"\u00A0"} Meias do Bem {"\u00A0"}
+            </a>
+            pra que elas virem cobertores para quem precisa.
+
+            Deposite roupas sem uso nas urnas de logística reversa da
+            <a className="font-bold" href="https://sustentabilidade.cea.com.br/pt-br/Paginas/MovimentoReciclo.aspx" target="_blank">
+              {"\u00A0"} C&A
+            </a> ou
+            <a className="font-bold" href="https://www.lojasrenner.com.br/sustentabilidade/eco-estilo?srsltid=AfmBOorRGEPb4To-txNT9nTq9ZoP4KB6oEVErwziMej4MxvqQZs1z8DE" target="_blank">
+              {"\u00A0"} Renner
+            </a>
+            , para reciclagem dos materiais da indústria textil.
+
+            Descarte frascos de perfumaria em ecopontos também das lojas
+            <a className="font-bold" href="https://www.lojasrenner.com.br/sustentabilidade/eco-estilo?srsltid=AfmBOorRGEPb4To-txNT9nTq9ZoP4KB6oEVErwziMej4MxvqQZs1z8DE" target="_blank">
+              {"\u00A0"} Renner
+            </a>
+            , e descarte embalagens em lojas
+            <a className="font-bold" href="https://www.boticario.com.br/dicas-de-beleza/boti-recicla-conheca-o-programa-de-retorno-de-embalagens-vazias/" target="_blank">
+              {"\u00A0"} O{"\u00A0"}Boticário
+            </a>
+            ,
+            <a className="font-bold" href="https://www.natura.com.br/c/logistica-reversa" target="_blank">
+              {"\u00A0"} Natura
+            </a>
+            ,
+            <a className="font-bold" href="https://www.eudora.com.br/sustentabilidade/" target="_blank">
+              {"\u00A0"} Eudora {"\u00A0"}
+            </a>
+            e
+            <a className="font-bold" href="https://www.quemdisseberenice.com.br/recicla/" target="_blank">
+              {"\u00A0"} Quem Disse Berenice
+            </a>.
+
+            Papéis de cadernos usados? A
+            <a className="font-bold" href="https://www.kalunga.com.br/hotsite/volta-as-aulas/trade-in-cadernos" target="_blank">
+              {"\u00A0"} Kalunga {"\u00A0"}
+            </a>
+            aceita esses materiais e eles podem virar novos produtos escolares.
+            Você também pode usar o aplicativo
+            <a className="font-bold" href="https://www.cataki.org" target="_blank">
+              {"\u00A0"} Cataki {"\u00A0"}
+            </a>
+            para contratar serviços de retirada de resíduos sólidos por um trabalhador cadastrado na plataforma.
+          </p>
+        </div>
+
+      </>
+    );
+  }
+
+  function Notas() {
+    return (
+      <p className=" flex gap-4 py-20">
+        Em algumas lojas o descarte é revertido em pontos para descontos e compras de produtos, você economiza e cuida do planeta.
+
+        Descartar certo é respeitar o planeta e cuidar das pessoas.
+
+        Projeto baseado na campanha "no hello".
+      </p>
+    )
+  }
+
+  return (
+    <div className="px-95">
+      <Homepage />
+      <NaoFaca />
+      <FacaAssim />
+      <Notas />
     </div>
   );
 }

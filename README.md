@@ -1,36 +1,34 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# ♻️ Não Jogue Fora – Educação para o Descarte Consciente
 
-## Getting Started
+Este é um projeto construído com [Next.js] com o objetivo de promover a conscientização sobre o descarte correto de resíduos e práticas sustentáveis por meio de uma interface acessível.
 
-First, run the development server:
+Inspirado na campanha "No Hello", o projeto aplica o mesmo conceito direto e transformador à sustentabilidade: ao invés de dizer "vou jogar fora", reflita sobre o impacto — **não existe "fora" no planeta em que vivemos.**
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+---
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## ✨ Funcionalidades
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- Informações sobre o impacto do descarte incorreto.
+- Dicas práticas de reutilização e descarte consciente.
+- Links úteis para projetos sociais e pontos de coleta.
+- Visual educativo com ilustrações e ícones para reforçar a mensagem.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## 🧑‍💻 Tecnologias Utilizadas
 
-To learn more about Next.js, take a look at the following resources:
+- [Next.js](https://nextjs.org)
+- [React Icons](https://react-icons.github.io/react-icons/)
+- [Tailwind CSS](https://tailwindcss.com)
+- [Next/Image](https://nextjs.org/docs/api-reference/next/image) para otimização de imagens
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+##  🌱 Sobre 
 
-## Deploy on Vercel
+O projeto "Não Jogue Fora" foi desenvolvido com fins educacionais e de conscientização ambiental, incentivando ações como doação de roupas e meias usadas para campanhas sociais, descarte de frascos de cosméticos e materiais escolares em pontos de coleta específicos.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Todas as orientações apresentadas foram pensadas para respeitar o meio ambiente e valorizar o trabalho de quem atua na cadeia de reciclagem.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 📄 Licença
+Este projeto é de uso livre para fins educacionais e sociais.
