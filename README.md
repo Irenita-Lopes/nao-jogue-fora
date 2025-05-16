@@ -2,7 +2,7 @@
 
 Este é um projeto construído com [Next.js] com o objetivo de promover a conscientização sobre o descarte correto de resíduos e práticas sustentáveis por meio de uma interface acessível.
 
-Inspirado na campanha "No Hello", o projeto aplica o mesmo conceito direto e transformador à sustentabilidade: ao invés de dizer "vou jogar fora", reflita sobre o impacto — **não existe "fora" no planeta em que vivemos.**
+Inspirado na campanha "No Hello", o projeto aplica o mesmo conceito direto e transformador à sustentabilidade: ao invés de dizer "vou jogar fora", refletimos juntos sobre o impacto de que **não existe "fora" no planeta em que vivemos.**
 
 ---
 
@@ -20,7 +20,7 @@ Inspirado na campanha "No Hello", o projeto aplica o mesmo conceito direto e tra
 - [Next.js](https://nextjs.org)
 - [React Icons](https://react-icons.github.io/react-icons/)
 - [Tailwind CSS](https://tailwindcss.com)
-- [Next/Image](https://nextjs.org/docs/api-reference/next/image) para otimização de imagens
+- [Next/Image](https://nextjs.org/docs/api-reference/next/image) 
 
 ---
 
