@@ -7,17 +7,17 @@ import dia_ensolarado_com_descarte_residual from "@/assets/dia_ensolarado_com_de
 export default function Home() {
   function Homepage() {
     return (
-      <>
-        <h1 className="mt-14 text-8xl font-bold">
+      <div className="w-full flex flex-col justify-center gap-4">
+        <h1 className="mt-14 text-4xl md:text-8xl font-bold">
           não jogue fora
         </h1>
         <h4 className="mt-5 text-gray-400 font-light">
           por favor, não diga que vai jogar algo fora
         </h4>
-        <h2 className="mt-15 text-5xl text-gray-700">
+        <h2 className="mt-15 text-2xl md:text-5xl text-gray-700">
           Imagine falar que vai "jogar fora" sendo que não existe "fora".
         </h2>
-      </>
+      </div>
     );
   }
 
@@ -31,12 +31,12 @@ export default function Home() {
           </h3>
         </div>
 
-        <div className="flex gap-15">
+        <div className="flex flex-col md:flex-row gap-15">
           <Image
             src={dia_nublado_com_poluicao}
             alt="dia nublado com poluicao"
-            className="w-1/3" />
-          <p className="text-[1.2rem]">
+            className="w-full md:w-1/3" />
+          <p className="text-justify md:text-left text-[1.2rem]">
             Jogar roupas que não estão em bom estado no lixo comum ou doar para pessoas em situação de rua não são práticas sustentáveis, nem respeitosas.
 
             Descartar materiais recicláveis misturados com resíduos orgânicos, inviabilizando o processo de triagem e reaproveitamento em cooperativas de reciclagem.
@@ -55,12 +55,12 @@ export default function Home() {
             No lugar daquilo, tente isso
           </h3>
         </div>
-        <div className="flex gap-15">
+        <div className="flex flex-col md:flex-row gap-15">
           <Image
             src={dia_ensolarado_com_descarte_residual}
             alt="dia ensolarado com descarte residual"
-            className="w-1/3" />
-          <p className="text-[1.2rem]">
+            className="w-full md:w-1/3"/>
+          <p className="text-justify md:text-left text-[1.2rem]">
             Leve suas meias usadas para o projeto
             <a className="font-bold" href="https://www.meiasdobem.com.br/" target="_blank">
               {"\u00A0"} Meias do Bem {"\u00A0"}
@@ -127,7 +127,7 @@ export default function Home() {
   }
 
   return (
-    <div className="px-95">
+    <div className="px-4 md:px-95">
       <Homepage />
       <NaoFaca />
       <FacaAssim />
