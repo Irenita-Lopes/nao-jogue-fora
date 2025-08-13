@@ -1,8 +1,8 @@
 import Image from "next/image";
 import { BiAngry } from "react-icons/bi";
 import { FaRegSmileWink } from "react-icons/fa";
-import dia_nublado_com_poluicao from "@/assets/dia_nublado_com_poluicao.jpg";
-import dia_ensolarado_com_descarte_residual from "@/assets/dia_ensolarado_com_descarte_residual.jpg";
+import descarte_irregular from "@/assets/descarte-irregular.png";
+import separando_residuos from "@/assets/separando-residuos.png";
 
 export default function Home() {
   function Homepage() {
@@ -33,7 +33,7 @@ export default function Home() {
 
         <div className="flex flex-col md:flex-row gap-15">
           <Image
-            src={dia_nublado_com_poluicao}
+            src={descarte_irregular}
             alt="dia nublado com poluicao"
             className="w-full md:w-1/3" />
           <p className="text-justify md:text-left text-[1.2rem]">
@@ -57,7 +57,7 @@ export default function Home() {
         </div>
         <div className="flex flex-col md:flex-row gap-15">
           <Image
-            src={dia_ensolarado_com_descarte_residual}
+            src={separando_residuos}
             alt="dia ensolarado com descarte residual"
             className="w-full md:w-1/3"/>
           <p className="text-justify md:text-left text-[1.2rem]">
@@ -106,7 +106,7 @@ export default function Home() {
             <a className="font-bold" href="https://www.cataki.org" target="_blank">
               {"\u00A0"} Cataki {"\u00A0"}
             </a>
-            para contratar serviços de retirada de resíduos sólidos por um trabalhador cadastrado na plataforma.
+            para contratar serviços de retirada de resíduos sólidos por trabalhadores cadastrados na plataforma.
           </p>
         </div>
 
