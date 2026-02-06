@@ -3,6 +3,7 @@ import { BiAngry } from "react-icons/bi";
 import { FaRegSmileWink } from "react-icons/fa";
 import descarte_irregular from "@/assets/descarte-irregular.png";
 import separando_residuos from "@/assets/separando-residuos.png";
+import Footer from "@/componets/Footer";
 
 export default function Home() {
   function Homepage() {
@@ -37,9 +38,9 @@ export default function Home() {
             alt="dia nublado com poluicao"
             className="w-full md:w-1/3" />
           <p className="text-justify md:text-left text-[1.2rem]">
-            Jogar roupas que não estão em bom estado no lixo comum ou doar para pessoas em situação de rua não são práticas sustentáveis, nem respeitosas.
+            Não é adequado descartar no lixo comum ou doar roupas que não estão conservadas, essa prática não é sustentável, nem respeitosa.
 
-            Descartar materiais recicláveis misturados com resíduos orgânicos, inviabilizando o processo de triagem e reaproveitamento em cooperativas de reciclagem.
+            Descartar materiais recicláveis misturados com resíduos orgânicos, inviabilizando o processo de triagem e reaproveitamento em cooperativas de reciclagem, também não é a melhor altenativa para lidar com os resíduos.
           </p>
         </div>
       </>
@@ -52,7 +53,7 @@ export default function Home() {
         <div className="mt-20 flex gap-4 text-3xl py-6">
           <FaRegSmileWink className="text-red-600" />
           <h3 className="font-bold text-3xl">
-            No lugar daquilo, tente isso
+            Tente isso
           </h3>
         </div>
         <div className="flex flex-col md:flex-row gap-15">
@@ -65,7 +66,7 @@ export default function Home() {
             <a className="font-bold" href="https://www.meiasdobem.com.br/" target="_blank">
               {"\u00A0"} Meias do Bem {"\u00A0"}
             </a>
-            pra que elas virem cobertores para quem precisa.
+            pra que elas virem cobertores pra quem precisa.
 
             Deposite roupas sem uso nas urnas de logística reversa da
             <a className="font-bold" href="https://sustentabilidade.cea.com.br/pt-br/Paginas/MovimentoReciclo.aspx" target="_blank">
@@ -74,7 +75,7 @@ export default function Home() {
             <a className="font-bold" href="https://www.lojasrenner.com.br/sustentabilidade/eco-estilo?srsltid=AfmBOorRGEPb4To-txNT9nTq9ZoP4KB6oEVErwziMej4MxvqQZs1z8DE" target="_blank">
               {"\u00A0"} Renner
             </a>
-            , para reciclagem dos materiais da indústria textil.
+            , pra reciclagem dos materiais da indústria textil.
 
             Descarte frascos de perfumaria em ecopontos também das lojas
             <a className="font-bold" href="https://www.lojasrenner.com.br/sustentabilidade/eco-estilo?srsltid=AfmBOorRGEPb4To-txNT9nTq9ZoP4KB6oEVErwziMej4MxvqQZs1z8DE" target="_blank">
@@ -106,7 +107,7 @@ export default function Home() {
             <a className="font-bold" href="https://www.cataki.org" target="_blank">
               {"\u00A0"} Cataki {"\u00A0"}
             </a>
-            para contratar serviços de retirada de resíduos sólidos por trabalhadores cadastrados na plataforma.
+            pra contratar serviços de retirada de resíduos sólidos por trabalhadores cadastrados na plataforma.
           </p>
         </div>
 
@@ -127,11 +128,12 @@ export default function Home() {
   }
 
   return (
-    <div className="px-4 md:px-95">
+    <div className="px-4">
       <Homepage />
       <NaoFaca />
       <FacaAssim />
       <Notas />
+      <Footer />
     </div>
   );
 }
